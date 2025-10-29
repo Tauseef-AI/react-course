@@ -1,1 +1,1 @@
-This is the React learning series where we build React applications from scratch.
+A comprehensive React course covering fundamentals, hooks, state management, and advanced patterns.
