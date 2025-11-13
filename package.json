@@ -1,0 +1,26 @@
+{
+  "name": "react-course",
+  "version": "1.0.0",
+  "description": "react course",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tauseef-AI/react-course.git"
+  },
+  "keywords": [],
+  "author": "Muhammad Tauseef",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tauseef-AI/react-course/issues"
+  },
+  "homepage": "https://github.com/Tauseef-AI/react-course#readme",
+  "devDependencies": {
+    "parcel": "^2.16.1"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}

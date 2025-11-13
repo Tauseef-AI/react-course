@@ -1,3 +1,7 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+
 /*
 /   <div id="parent">
 /           <h1>Nested Example of react</h1>
@@ -47,8 +51,8 @@ const parentsibling = React.createElement(
   "div",
   { id: "parent" },
   React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "H1 tags"),
-    React.createElement("h2", {}, "sibling of h1 tags"),
+    React.createElement("h1", { key: "h1-child" }, "H1 tags"),
+    React.createElement("h2", { key: "h2-child" }, "sibling of h1 tags"),
   ])
 );
 
@@ -71,15 +75,15 @@ const nestedsilbling = React.createElement(
   "div",
   { id: "parent" },
   [
-    React.createElement("div", { id: "child" }, [
-      React.createElement("h1", {}, "H1 tags"),
-      React.createElement("h2", {}, "sibling of h1 tags"),
+    React.createElement("div", { id: "child", key: "child-1" }, [
+      React.createElement("h1", { key: "h1-child1" }, "H1 tags"),
+      React.createElement("h2", { key: "h2-child1" }, "sibling of h1 tags"),
     ]),
-  ],
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "H1 tags"),
-    React.createElement("h2", {}, "sibling of h1 tags"),
-  ])
+    React.createElement("div", { id: "child2", key: "child-2" }, [
+      React.createElement("h1", { key: "h1-child2" }, "H1 tags"),
+      React.createElement("h2", { key: "h2-child2" }, "sibling of h1 tags"),
+    ])
+  ]
 );
 
 root.render(nestedsilbling);
